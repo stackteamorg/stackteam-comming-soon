@@ -1,4 +1,4 @@
-<?php include 'notify.php';include 'environment.php' ?><!DOCTYPE html>
+<?php include 'src/notify.php';include 'src/environment.php' ?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
