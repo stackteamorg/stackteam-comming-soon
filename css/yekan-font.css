@@ -1,0 +1,79 @@
+@font-face {
+	font-family: Yekan Bakh FaNum;
+	src: url(../fonts/yekan/YekanBakhFaNum-Light.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Light.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Light.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Light.ttf) format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Yekan Bakh FaNum Hairline;
+	src: url(../fonts/yekan/YekanBakhFaNum-Hairline.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Hairline.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Hairline.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Hairline.ttf) format("truetype");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Yekan Bakh FaNum;
+	src: url(../fonts/yekan/YekanBakhFaNum-Thin.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Thin.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Thin.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Thin.ttf) format("truetype");
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Yekan Bakh FaNum;
+	src: url(../fonts/yekan/YekanBakhFaNum-Fat.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Fat.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Fat.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Fat.ttf) format("truetype");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Yekan Bakh FaNum;
+	src: url(../fonts/yekan/YekanBakhFaNum-Regular.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Regular.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Regular.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Yekan Bakh FaNum;
+	src: url(../fonts/yekan/YekanBakhFaNum-Heavy.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Heavy.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Heavy.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Heavy.ttf) format("truetype");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: "Yekan Bold";
+	src: url(../fonts/yekan/YekanBakhFaNum-Bold.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Bold.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Bold.ttf) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap
+}
+
+@font-face {
+	font-family: Yekan Bakh FaNum;
+	src: url(../fonts/yekan/YekanBakhFaNum-Medium.eot);
+	src: url(../fonts/yekan/YekanBakhFaNum-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/yekan/YekanBakhFaNum-Medium.woff) format("woff"), url(../fonts/yekan/YekanBakhFaNum-Medium.ttf) format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap
+}
+
+body, .btn{
+    font-family: "Yekan Bold";
+}
+
+h1,h2,h3,h4,h5,h6,a,p,span,strong,small,input{
+    font-family: "Yekan Bold";
+}
