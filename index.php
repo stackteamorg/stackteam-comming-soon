@@ -1,4 +1,4 @@
-<?php include 'src/notify.php';include 'src/environment.php' ?><!DOCTYPE html>
+<?php ini_set('display_errors', 'On'); include 'src/environment.php'; include 'src/notify.php' ?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
