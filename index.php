@@ -1,13 +1,13 @@
-<?php include 'notify.php' ?><!DOCTYPE html>
+<?php include 'notify.php';include 'environment.php' ?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="keywords" content="سکوی ابری, پلتفورم ابری, Platform as a Service, سرویس ابری PaaS,سرویس ابری DBaaS">
-		<meta name="description" content="پسیفای یک اپلیکیشن خدمات ابری پیشرفته است که با ایجاد زیرساخت کوبرنتیز و داکر سرویس سکوی ابری یا PaaS ارائه میدهد">
-      	<meta property="og:site_name" content="PaaSify.ir">
-      	<meta property="og:url" content="https://paasify.ir/">
+		<meta name="keywords" content="استک تیم,stackteam,اکوسیستم استک تیم,<?php env('PLATFORM') ?>,<?php env('TITLE') ?>">
+		<meta name="description" content="<?php env('DESC') ?>">
+      	<meta property="og:site_name" content="<?php env('DOMAIN') ?>">
+      	<meta property="og:url" content="<?php env('URL') ?>">
       	<meta property="og:type" content="website">
-      	<meta property="og:title" content="PaaSify: ارائه دهنده خدمات Platform as a Service">
+      	<meta property="og:title" content="<?php env('TITLE') ?> | <?php env('PLATFORM') ?>">
 		<meta name='og:image' content='images/assets/ogg.png'>
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,17 +20,17 @@
 		<meta name="msapplication-navbutton-color" content="#fd6a5e">
 		<!-- iOS Safari -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="#fd6a5e">
-		<title>PaaSify: ارائه دهنده خدمات Platform as a Service</title>
+		<title><?php env('TITLE') ?> | <?php env('PLATFORM') ?></title>
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
 		<!-- Main style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<!-- responsive style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 		<!-- yekan font style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/yekan-font.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/yekan-font.css">
 		<!-- rtl font style sheet -->
-		<link rel="stylesheet" type="text/css" href="css/rtl.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/rtl.css">
 
 		<!-- Fix Internet Explorer ______________________________________-->
 		<!--[if lt IE 9]>
@@ -46,10 +46,10 @@
 			<div class="full-height-layout d-flex align-items-center">
 				<div class="coming-soon-content font-gordita">
 					<h6>به زودی..</h6>
-					<h1>سکوی ابری پسیفای</h1>
+					<h1><?php env('TITLE') ?></h1>
 					<div class="row">
 						<div class="col-lg-9 m-auto">
-							<p>پسیفای یک اپلیکیشن خدمات ابری پیشرفته است که با ایجاد زیرساخت کوبرنتیز و داکر سرویس سکوی ابری یا PaaS ارائه میدهد</p>
+							<p><?php env('DESC') ?></p>
 						</div>
 					</div>
 					<form action="#" method="post" style="direction: ltr">
@@ -71,16 +71,16 @@
 						<li><a href="coming-soon-v1.html#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 					</ul>
 
-					<img src="images/shape/179.svg" alt="" class="shapes shape-one">
-					<img src="images/shape/180.svg" alt="" class="shapes shape-two">
-					<img src="images/shape/181.svg" alt="" class="shapes shape-three">
-					<img src="images/shape/182.svg" alt="" class="shapes shape-four">
-					<img src="images/shape/183.svg" alt="" class="shapes shape-five">
-					<img src="images/shape/184.svg" alt="" class="shapes shape-six">
-					<img src="images/shape/185.svg" alt="" class="shapes shape-seven">
-					<img src="images/shape/186.svg" alt="" class="shapes shape-eight">
-					<img src="images/shape/187.svg" alt="" class="shapes shape-nine">
-					<img src="images/shape/188.svg" alt="" class="shapes shape-ten">
+					<img src="assets/images/shape/179.svg" alt="" class="shapes shape-one">
+					<img src="assets/images/shape/180.svg" alt="" class="shapes shape-two">
+					<img src="assets/images/shape/181.svg" alt="" class="shapes shape-three">
+					<img src="assets/images/shape/182.svg" alt="" class="shapes shape-four">
+					<img src="assets/images/shape/183.svg" alt="" class="shapes shape-five">
+					<img src="assets/images/shape/184.svg" alt="" class="shapes shape-six">
+					<img src="assets/images/shape/185.svg" alt="" class="shapes shape-seven">
+					<img src="assets/images/shape/186.svg" alt="" class="shapes shape-eight">
+					<img src="assets/images/shape/187.svg" alt="" class="shapes shape-nine">
+					<img src="assets/images/shape/188.svg" alt="" class="shapes shape-ten">
 				</div> <!-- /.coming-soon-content -->
 			</div> <!-- /.full-height-layout -->
 			
@@ -90,14 +90,14 @@
 
     	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     	<!-- jQuery -->
-		<script src="vendor/jquery.min.js"></script>
+		<script src="assets/vendor/jquery.min.js"></script>
 		<!-- Popper js -->
-		<script src="vendor/popper.js/popper.min.js"></script>
+		<script src="assets/vendor/popper.js/popper.min.js"></script>
 		<!-- Bootstrap JS -->
-		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 		<!-- Theme js -->
-		<script src="js/theme.js"></script>
+		<script src="assets/js/theme.js"></script>
 		</div>
 	</body>
 </html>
