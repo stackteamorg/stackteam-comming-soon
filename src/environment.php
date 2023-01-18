@@ -2,9 +2,9 @@
 
 require_once realpath(__DIR__ . '/../vendor/autoload.php');
 
-if (!file_exists(__DIR__ . '/../.env')) {
-    throw new Exception(".env file is not exist");
-}
+// if (!file_exists(__DIR__ . '/../.env')) {
+//     throw new Exception(".env file is not exist");
+// }
 
 //print_r($_SERVER);die();
 $platforms = require_once ('platforms.php');
@@ -21,8 +21,8 @@ $data = (object)require_once(__DIR__ . '/../platforms/' . $platform . '.php');
 
 
 // Looing for .env at the root directory
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
-$dotenv->load();
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+// $dotenv->load();
 
 foreach($data as $k => $v) {
     $_ENV[$k] = $v;
