@@ -1,4 +1,4 @@
-<?php ini_set('display_errors', _env('APP_DEBUG')); include 'src/environment.php'; include 'src/notify.php' ?><!DOCTYPE html>
+<?php  include 'src/environment.php';ini_set('display_errors', _env('APP_DEBUG')); include 'src/notify.php' ?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -20,7 +20,7 @@
 		<meta name="msapplication-navbutton-color" content="#fd6a5e">
 		<!-- iOS Safari -->
 		<meta name="apple-mobile-web-app-status-bar-style" content="#fd6a5e">
-		<title><?php env('TITLE') ?> | <?php env('PLATFORM') ?></title>
+		<title><?php env('title') ?> | <?php env('platform') ?></title>
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="56x56" href="https://stackteam.org/assets/images/fav-icon/icon.png">
 		<!-- Main style sheet -->
