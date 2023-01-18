@@ -11,6 +11,9 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
 
+function _env($key) {
+    return $_ENV[$key];
+}
 
 function env($key) {
     echo $_ENV[$key];

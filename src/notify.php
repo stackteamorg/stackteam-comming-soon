@@ -1,13 +1,11 @@
 <?php
 
+//ini_set('display_errors', 'On');
+
 $alert  = null;
-$field  = null;
+$data  = null;
 $notify = null;
 
-define('DB_HOST',"localhost");
-define('DB_USER',"paasify_user");
-define('DB_PASS',"T[*,!7#ziEcO");
-define('DB_NAME',"paasify_commingsoon");
 
 
 // Create connection
@@ -16,6 +14,7 @@ if(isset($_POST['notify'])) {
 
     $notify = $_POST['notify'];
 
+
     $is_email = false;
     $is_mobile = false;
 
@@ -23,35 +22,40 @@ if(isset($_POST['notify'])) {
         if(!($is_mobile = preg_match("/^09[0-9]{9}$/",$_POST['notify']))) {
             $alert = 'شماره موبایل یا ایمیلی که وارد کردید اشتباه است';
         } else {
-            $field = "mobile";
+            $data = "&mobile=$notify";
         }
     } else {
-        $field = "email";
+        $data = "&email=$notify";
     }
-
 
     if ($is_mobile || $is_email) {
 
-        $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-        // Check connection
-        if ($conn->connect_error) {
-            $alert('ارتباط با دیتابیس ممکن نبود، متاسفم');
-        }
+        $ch = curl_init();
 
-        // create insert query
+        curl_setopt($ch, CURLOPT_URL,"http://stackteam.org/api/comming-soon");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS,
+                    'apikey=' . _env('APIKEY')  . "$data&platform=" . _env('PLATFORM'));
 
+        // In real life you should use something like:
+        // curl_setopt($ch, CURLOPT_POSTFIELDS, 
+        //          http_build_query(array('postvar1' => 'value1')));
 
-        $sql = "INSERT INTO notify ($field) VALUES ('$notify')";
+        // Receive server response ...
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        if ($conn->query($sql) === TRUE) {
-            $alert = $is_email ? 'آدرس ایمیل' : 'شماره موبایل' ;
-            $alert .= " <code>$notify</code> در سیستم ثبت شد و به محض راه اندازی سایت همراه با یک کد خوش‌آمد گویی <code>2 میلیون ریالی</code> به شما اطلاع رسانی خواهد شد";
+        $server_output = json_decode(curl_exec($ch));
+
+        if ($server_output->success) {
+            $alert = "<code>$notify</code> در سیستم ثبت شد و به محض راه اندازی سایت همراه با یک کد خوش‌آمد گویی <code>2 میلیون ریالی</code> به شما اطلاع رسانی خواهد شد";
         } else {
-            $alert = "خطای در ثبت رکورد پیش آمده است <br><code>$sql</code>";
+
+            $alert = 'خطایی رخ داده است';
         }
 
-        $conn->close();
+        curl_close($ch);
     }
 
 }
+
 ?>

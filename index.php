@@ -22,7 +22,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#fd6a5e">
 		<title><?php env('TITLE') ?> | <?php env('PLATFORM') ?></title>
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+		<link rel="icon" type="image/png" sizes="56x56" href="https://stackteam.org/assets/images/fav-icon/icon.png">
 		<!-- Main style sheet -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<!-- responsive style sheet -->
