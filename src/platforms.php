@@ -8,5 +8,13 @@ return [
     'stackcloud.ir' => 'stackcloud',
     'stackinvest.ir' => 'stackinvest',
     'stacktalk.ir' => 'stacktalk',
-    'stackecosystem.ir' => 'stackecosystem'
+    'stackecosystem.ir' => 'stackecosystem',
+
+    'stackjob.develop' => 'stackjob',
+    'stackmag.develop' => 'stackmag',
+    'stackacademy.develop' => 'stackacademy',
+    'stackcloud.develop' => 'stackcloud',
+    'stackinvest.develop' => 'stackinvest',
+    'stacktalk.develop' => 'stacktalk',
+    'stackecosystem.develop' => 'stackecosystem'
 ];

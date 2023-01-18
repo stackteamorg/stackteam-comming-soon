@@ -1,13 +1,13 @@
-<?php ini_set('display_errors', 'On'); include 'src/environment.php'; include 'src/notify.php' ?><!DOCTYPE html>
+<?php ini_set('display_errors', _env('APP_DEBUG')); include 'src/environment.php'; include 'src/notify.php' ?><!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="keywords" content="استک تیم,stackteam,اکوسیستم استک تیم,<?php env('PLATFORM') ?>,<?php env('TITLE') ?>">
-		<meta name="description" content="<?php env('DESC') ?>">
-      	<meta property="og:site_name" content="<?php env('DOMAIN') ?>">
-      	<meta property="og:url" content="<?php env('URL') ?>">
+		<meta name="keywords" content="استک تیم,stackteam,اکوسیستم استک تیم,<?php env('platform') ?>,<?php env('title') ?>">
+		<meta name="description" content="<?php env('description') ?>">
+      	<meta property="og:site_name" content="<?php env('domain') ?>">
+      	<meta property="og:url" content="<?php env('url') ?>">
       	<meta property="og:type" content="website">
-      	<meta property="og:title" content="<?php env('TITLE') ?> | <?php env('PLATFORM') ?>">
+      	<meta property="og:title" content="<?php env('title') ?> | <?php env('platform') ?>">
 		<meta name='og:image' content='images/assets/ogg.png'>
 		<!-- For IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,10 +46,10 @@
 			<div class="full-height-layout d-flex align-items-center">
 				<div class="coming-soon-content font-gordita">
 					<h6>به زودی..</h6>
-					<h1><?php env('TITLE') ?></h1>
+					<h1><?php env('title') ?></h1>
 					<div class="row">
 						<div class="col-lg-9 m-auto">
-							<p><?php env('DESC') ?></p>
+							<p><?php env('description') ?></p>
 						</div>
 					</div>
 					<form action="#" method="post" style="direction: ltr">
