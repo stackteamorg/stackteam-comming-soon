@@ -2,9 +2,9 @@
 
 return [
 
-    'domain' => '',
-    'url' => '',
-    'platform' => '',
-    'title' => '',
-    'description' => ''
+    'domain' => 'stackmag.ir',
+    'url' => 'https://stackmag.ir/',
+    'platform' => 'Stackmag',
+    'title' => 'استک‌مگ، جای برای نوشتن پیرامون تکنولوژی',
+    'description' => 'استک مگ یک سوشیال بلاگ پیرامون برنامه نویسی، تکنولوژی و استارتاپ است'
 ];
