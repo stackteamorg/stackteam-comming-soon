@@ -1,3 +1,4 @@
+<?php print_r($_SERVER);die(); ?>
 <?php  include 'src/environment.php';ini_set('display_errors', _env('APP_DEBUG')); include 'src/notify.php' ?><!DOCTYPE html>
 <html lang="en">
 	<head>
